@@ -16,9 +16,9 @@ github-actions = { repository = "quininer/tokio-rustls", workflow = "Rust" }
 
 [dependencies]
 bytes = "0.5"
-tokio = "0.2.0"
+tokio = "0.2.6"
 futures-core = "0.3.1"
-rustls = "0.16"
+rustls = { git = "https://github.com/ctz/rustls.git", default_features=true }
 webpki = "0.21"
 
 [features]
